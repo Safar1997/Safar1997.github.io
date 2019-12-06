@@ -1,0 +1,120 @@
+.header{
+    height: 80px;
+    background-color: $bgColor;
+    .header__buttons{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .header__menu::before{
+        content: '';
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-image: url();
+        background-color: #FF3E79;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        border-radius: 50%;
+        background-image: $menu;
+        margin-left: 15px;
+        margin-right: 5px;
+        }
+      .header__menu::after{
+        content: '';
+        display: inline-block;
+        margin-left: 5px;
+        width: 2px;
+        height: 44px;
+        background-color:#EAEAEA;
+      }
+      .header__logo{
+        margin-right: auto;
+        margin-left: 15px;
+      }
+      .header__phone::before{
+        content: '';
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-image: url();
+        background-color: #FF3E79;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        border-radius: 50%;
+        background-image: $call;
+        margin-right: 15px;
+      }  
+      .header__message::before{
+        content: '';
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-image: url();
+        background-color: #FF3E79;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        border-radius: 50%;
+        background-image: $mess;
+        margin-right: 15px;
+      }
+      .header__contact::before{
+          content: '';
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-image: url();
+        background-color: #FF3E79;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        border-radius: 50%;
+        background-image: $user;
+        margin-right: 30px;
+      }
+      .header__contact::after{
+        content: '';
+        display: inline-block;
+        margin-right: 20px;
+        width: 2px;
+        height: 44px;
+        background-color:#EAEAEA;
+      }
+      .header__tools::before{
+          content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url();
+    background-color: #FF3E79;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-radius: 50%;
+        background-image: $tools;
+        margin-right: 15px;
+      }
+      .header__status::before{
+          content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url();
+    background-color: #FF3E79;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-radius: 50%;
+        background-image: $status;
+        margin-right: 15px;
+      }
+    }
+  }
+  @media (min-width: 1025px){
+    .header{
+      display: none;
+    }
+  }
+
+  @media (max-width: 515px){
+    .header__phone, .header__message, .header__contact{
+      display: none;
+    }
+  }

@@ -1,0 +1,219 @@
+.section-services{
+    margin-left: 330px;
+    .section-services__title{
+      transform: translateX(-20px);
+      padding-left: 10px;
+      height: 50px;
+      line-height: 50px;
+      text-transform: uppercase;
+      color:  #7E7E82;
+      font-size: 16px;
+      background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    }
+    .section-services__logo__title{
+      padding: 25px;
+      // display: flex;
+      // .section-services__text__column-1{
+        
+      // }
+      .section-services__text__column-2{
+        margin-left: auto;
+        margin-right: 10px;   
+      }
+      .section-services__text__column-3{
+        margin-left: auto;
+        margin-right: 10px;
+      }
+    }
+    .section-services__logos{
+      display: flex;
+      padding: 25px;
+      background-color: $bgColor;
+      border-radius: 8px;
+      .section-services__logo{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #EAEAEA;
+        .section-services__follow{
+          cursor: pointer;
+        }
+        .section-services__follow::before{
+          content: '';
+          line-height: 25px;
+          display: inline-block;
+          background-image: $goup_10;
+          background-repeat: no-repeat;
+          width: 125px;
+          height: 32px;
+        }
+        
+      }
+      .section-services__logo:first-child{
+        padding-top: 0px;
+      }
+    }
+  }
+  
+  @media (max-width: 1025px){
+    .section-services{
+      margin-left: 20px;
+    }
+  }
+  @media (min-width: 767px){
+    .section-services__logo__title{
+      display: flex;
+      justify-content: flex-end;
+    }
+    .section-services__text__title-column-1{
+      margin-left: 10px;
+      margin-right: auto;
+    }
+    .section-services__text__title-column-2{
+      margin-right: 150px;
+      margin-left: auto;
+    }
+    .section-services__text__title-column-3{
+      margin-right: 50px;
+    }
+    .section-services__logos{
+      flex-direction: column;
+      display: flex;
+      flex-shrink: 1;
+    }
+    .section-services__logo{
+      display: flex;
+      justify-content: flex-end;
+      flex-shrink: 1;
+    }
+    .section-services__text__column-1{
+      margin-right: auto;
+      margin-left: 0px;
+    }
+    .section-services__text__column-2{
+      margin-right: 20px;
+      margin-left: auto;
+  
+    }
+    .section-services__logo:first-child .section-services__text__column-2{
+      margin-right: 25px;
+      margin-left: auto;
+      }
+    .section-services__text__column-3{
+      margin-right: 10px;
+    }
+    .section-services__follow{
+      margin-right: 30px;
+    }
+  }
+  @media(min-width: 769px){
+    .section-services__logo__title{
+      display: flex;
+      justify-content: flex-end;
+    }
+    .section-services__text__title-column-1{
+      margin-left: 10px;
+      margin-right: auto;
+    }
+    .section-services__text__title-column-2{
+      margin-right: 260px;
+    }
+    .section-services__text__title-column-3{
+      margin-right: 220px;
+    }
+    .section-services__logos{
+      flex-direction: column;
+      display: flex;
+      flex-shrink: 1;
+    }
+    .section-services__logo{
+      display: flex;
+      justify-content: flex-end;
+      flex-shrink: 1;
+    }
+    .section-services__text__column-1{
+      margin-left: 5px;
+      margin-right: auto;
+    }
+    .section-services__text__column-2{
+      margin-right: 200px;
+    }
+    .section-services__logo:first-child .section-services__text__column-2{
+      margin-right: 215px;
+    }
+    .section-services__text__column-3{
+      margin-right: 100px;
+    }
+    .section-services__follow{
+      margin-right: 30px;
+    }
+    
+  }
+  @media (max-width: 767px){
+    .section-services__logo__title{
+      display: none;
+    }
+    .section-services__logos{
+      height: 200px;
+      background-color: $bgColorMain;
+      padding: 5px;
+    }
+    .section-services__logo{
+      background-color: $bgColor;
+      padding-left: 5px;
+      // margin-left: 10px;
+      // height: 200px;
+    }
+    .section-services__logo:first-child 
+    .section-services__text__column-3{
+      margin-top: 50px;
+    }
+    .section-services__logo:nth-child(4) 
+    .section-services__text__column-2{
+      margin-top: 5px;
+    }
+    .section-services__text__column-1{
+      text-align: left;
+      display: inline-block;
+      width: 80px;
+    }
+    .section-services__text__column-2{
+      text-align: left;
+      display: block;
+      margin-top: 30px;
+      width: 80px;
+    }
+    .section-services__text__column-3{
+      vertical-align: bottom;
+      display: inline-block;
+      margin-top: 10px;
+      width: 80px;
+    }
+    .section-services__follow{
+      display: inline-block;
+      margin-top: 10px;
+    }
+    .section-services__text__column-1::before{
+      content: 'Ремонтные услуги';
+      display: inline-block;
+      transform: translate(0px,-5px);
+      color: #7E7E82;
+      font-size: 14px;
+      width: 150px;
+    }
+    .section-services__text__column-2::before{
+      content: 'Цена';
+      display: inline-block;
+      transform: translate(0px,-5px);
+      color: #7E7E82;
+      font-size: 14px;
+      width: 150px;
+    }
+    .section-services__text__column-3::before{
+      content: 'Срок';
+      display: inline-block;
+      transform: translate(0px,-5px);
+      color: #7E7E82;
+      font-size: 14px;
+      width: 150px;
+    }
+  }

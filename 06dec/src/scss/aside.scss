@@ -1,0 +1,202 @@
+.aside{
+    height: 1765px;
+    min-width: 320px;
+    max-width: 360px;
+    box-shadow: 0 0 10px 5px rgba(122,122,122,0.5);;
+    background-color: $bgColor;
+    transform: translateX();
+    transition: 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    font-family: $fontFamily;
+    
+    &__header{
+      padding: 25px;
+      display: flex;
+      align-items: center;
+      // .aside__form__search{
+      //   display: none;
+      //   width: 100px;
+      //   border: 1px solid black;
+      //   margin-left: 5px;
+      //   overflow: hidden;
+      // }
+      &__exit{
+        height: 40px;
+      }
+      // Наводка на ИКС
+      .aside__exit:hover::before{
+        background-color: brown;
+      }
+      .aside__search{
+        margin-left: auto;
+        height: 40px;
+      }
+      .aside__search:hover::before{
+        background-color: brown;
+      }
+      .aside__search::before{
+          content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url();
+    background-color: #FF3E79;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-radius: 50%;
+        background-image: $search;
+      }
+      
+    }
+    .aside__section{
+      padding-left: 25px;
+      .aside__list{
+        font-size: $linkSize;
+        line-height: 32px;
+        .aside__list__li{
+          margin-bottom: 25px;
+        }
+        .aside__list__li:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+    .aside__footer{
+      padding-left: 25px;
+      padding-bottom: 20px;
+      .aside__footer__buttons{
+        .aside__phone::before{
+            content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url();
+    background-color: #FF3E79;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-radius: 50%;
+          background-image: $call;
+        }  
+        .aside__phone:hover::before{
+          background-color: brown;
+          cursor: pointer;
+        }
+        .aside__message::before{
+            content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url();
+    background-color: #FF3E79;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-radius: 50%;
+          background-image: $mess;
+          margin-left: 15px;
+        }
+        .aside__message:hover::before{
+          background-color: brown;
+          cursor: pointer;
+        }
+        .aside__contact::before{
+            content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url();
+    background-color: #FF3E79;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-radius: 50%;
+          background-image: $user;
+          margin-left: 15px;
+        }
+        .aside__contact:hover::before{
+          background-color: brown;
+          cursor: pointer;
+        }
+      }
+      .aside__footer__contact{
+        margin-top: 20px;
+        .mail{
+          font-weight: 800;
+          display: block;  
+        }
+        .phone{
+          margin-top: 10px;
+          font-weight: bolder;
+          display: block;  
+        }  
+      }
+      .aside__footer__lang{
+        margin-top: 40px;
+        .en{
+          margin-left: 5px;
+        }
+        .ch{
+          margin-left: 5px;
+        }
+        .ru{
+          color: $bg_button;
+        }
+        .ru:hover{
+          color: $bg_button;
+          cursor: pointer;
+        }
+        .en:hover{
+          color: $bg_button;
+          cursor: pointer;
+        }
+        .ch:hover{
+          color: $bg_button;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  @media (max-width: 1440px){
+    .aside__footer{
+      margin-top: 100px;
+    }
+  }
+  @media (min-width: 1025px){
+    .aside{
+      left: 0%;
+      box-shadow: none;
+    }
+  }
+  @media (max-width: 1025px){
+    .aside{
+      left: -100%;
+      box-shadow: none;
+    }
+  }
+  
+  @media (max-width: 950px){
+    .aside__exit::before{
+      content: '';
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background-image: $exit;
+      background-color: #FF3E79;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      border-radius: 50%;
+      }
+    .aside__logo{
+      margin-left: 10px;
+    }
+    
+  }
+  @media (max-width: 320px){
+    .aside__footer{
+      margin-top: 20px;
+    }
+    .aside{
+      overflow: hidden;
+    }
+  }
